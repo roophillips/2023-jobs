@@ -256,7 +256,7 @@ fig9.update_layout(title='Application Summary <br><sup><sup>Daily and cumulative
 fig9.update_xaxes(showline=True, linecolor='black')
 fig9.update_yaxes(showline=True, linecolor='black', gridcolor='lightgray', showticklabels=False)
 
-# Salary range historgram chart
+# Salary range histogram chart
 
 fig8 = px.histogram(df2,x=["Pay Low","Pay High"],
                     barmode='group', nbins=12, marginal='box',
