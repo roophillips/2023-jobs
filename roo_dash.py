@@ -131,9 +131,7 @@ perc_resp = int((1-(df3['Submissions'].sum()
                    * 100)
 
 # Find unique company names and count (could also use .nunique() to find count...)
-unique_companies = df2.groupby('Company Name', as_index=False).count()['Company Name']
-unique_co_names = pd.DataFrame(unique_companies)
-unique_co_count = int(unique_co_names.count())
+unique_co_count = df2['Company Name'].nunique()
 
 # Quick check to show the various methods are equivalent
 if np.count_nonzero(
